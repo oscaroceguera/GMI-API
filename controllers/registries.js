@@ -7,7 +7,17 @@ exports.addRegisty = function (req, res) {
     .create(body)
     .then(function (registry) {
       res.json(registry.toJSON())
-    }, function(e){
+    }, function (e) {
       res.status(400).json(e)
+    })
+}
+
+exports.fetchRegisty = function (req, res) {
+  db.registry
+    .findAll()
+    .then(function (registries) {
+      res.json(registries)
+    }).catch(function () {
+      res.status(401).send()
     })
 }
