@@ -17,7 +17,7 @@ if (PORT === 3000) {
   }
 } else {
   corsOptions = {
-    origin: 'http://inoquotech.com'
+    origin: 'http://gmi.surge.sh'
   }
 }
 
