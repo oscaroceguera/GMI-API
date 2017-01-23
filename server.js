@@ -17,7 +17,7 @@ if (PORT === 3000) {
   }
 } else {
   corsOptions = {
-    origin: 'https://serene-caverns-93722.herokuapp.com'
+    origin: 'http://serene-caverns-93722.herokuapp.com'
   }
 }
 
