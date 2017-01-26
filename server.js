@@ -17,7 +17,7 @@ if (PORT === 3000) {
   }
 } else {
   corsOptions = {
-    origin: 'https://serene-caverns-93722.herokuapp.com'
+    origin: 'http://http://inoquotech.mx'
   }
 }
 
@@ -27,7 +27,7 @@ app.use(bodyParser.json({ type: '*/*'}))
 router(app)
 
 db.sequelize.sync(
-  // { force: true }
+  { force: true }
 ).then(function(){
   server.listen(PORT, function () {
     console.log('✔ Express corriendo en puerto ' + PORT)
