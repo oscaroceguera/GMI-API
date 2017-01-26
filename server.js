@@ -17,7 +17,7 @@ if (PORT === 3000) {
   }
 } else {
   corsOptions = {
-    origin: 'http://http://inoquotech.mx'
+    origin: 'http://inoquotech.mx'
   }
 }
 
