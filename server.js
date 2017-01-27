@@ -27,7 +27,7 @@ app.use(bodyParser.json({ type: '*/*'}))
 router(app)
 
 db.sequelize.sync(
-  { force: true }
+  // { force: true }
 ).then(function(){
   server.listen(PORT, function () {
     console.log('✔ Express corriendo en puerto ' + PORT)
